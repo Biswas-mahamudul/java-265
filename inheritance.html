@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>inheritrance</title>
+</head>
+
+<body>
+    <script>
+        class A {
+            constructor(v, m, c, p, w, wh, e, f, cap, s) {
+                this.name = v;
+                this.model = m;
+                this.color = c;
+                this.price = p;
+                this.weight = w;
+                this.wheels = wh;
+                this.engine = e;
+                this.fuel = f;
+                this.capacity = cap;
+                this.speed = s;
+
+            }
+            speed() {
+                document.write(this.name + "," + this.model + "," + this.color + "," + this.price + ","
+                    + this.weight + "," + this.wheels + "," + this.engine + "," + this.fuel + "," + this.capacity + "," + this.speed + ",");
+            }
+
+        }
+        const car = new A("SUV", "Toyota", "Pearl", "2.5core", "1500kg", 4, "2200cc", "petrol", 7, "100km/h");
+        const car1 = new A("SUV", "Toyota", "white", "2.5core", "1500kg", 4, "2200cc", "petrol", 7, "100km/h");
+
+
+        console.log(car);
+        console.log(car1);
+        document.write(car.name + "<br>" + car.model + "<br>" + car.color + "<br>" + car.price + "<br>" +
+            car.weight + "<br>" + car.wheels + "<br>" + car.engine + "<br>" + car.fuel + "<br>" +
+            car.capacity + "<br>" + car.speed + "<br>");
+        document.write(car1.name + "<br>" + car1.model + "<br>" + car1.color + "<br>" + car1.price + "<br>" +
+            car1.weight + "<br>" + car1.wheels + "<br>" + car1.engine + "<br>" + car1.fuel + "<br>" +
+            car1.capacity + "<br>" + car1.speed);
+
+        class Bus extends A {
+            constructor(bus) {
+                super();
+                this.type = bus;
+
+            }
+
+        }
+        const bus1 = new Bus("rm2");
+        console.log(bus1);
+
+    </script>
+</body>
+
+</html>

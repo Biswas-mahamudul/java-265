@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var a = (parseInt(prompt("enter number")));
+        var b = (parseInt(prompt("enter number")));
+        var c = (parseInt(prompt("enter number")));
+        var d = (parseInt(prompt("enter number")));
+
+        if (a > b) {
+            temp = a;
+            a = b;
+            b = temp;
+        }
+        if (a > c) {
+            temp = c;
+            a = c;
+            a = temp;
+        }
+        if (b > c) {
+            temp = b;
+            b = c;
+            c = temp;
+        }
+        if (c > d) {
+            temp = c;
+            d = c;
+            d = temp;
+        }
+        document.write(a + " ," + b + ", " + c + "," + d)
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        class ClassN {
+            constructor(cname, cage, c_phone, c_address, c_email) {
+                this.name = cname;
+                this.age = cage;
+                this.phone = c_phone;
+                this.address = c_address;
+                this.email = c_email;
+
+            }
+            show() {
+                document.write("my name is " + this.name + "<br>" + " my age is " + this.age + "<br>" + " and my phone number is " + this.phone + ", " + this.address + ", " + this.email + " < br > ");
+            }
+        }
+        const w1 = new ClassN("jirjir", 20, "1234567890", "Dhaka", "mh@gmail.com");
+        const w2 = new ClassN("ashik", 20, "1234567890", "Dhaka", "mh@gmail.com");
+        const w3 = new ClassN("ash", 42, "01476524", "khulna", "mh@gmail.com");
+
+        w1.show();
+        w2.show();
+        w3.show();
+        console.log(w1);
+        console.log(w2);
+    </script>
+</body>
+
+</html>

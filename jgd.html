@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>prime number</title>
+</head>
+
+<body>
+    <script>
+        let y = prompt("enter number");
+        var isPrime = true;
+        for (let i = 2; i < y; i++) {
+            if (y % i == 0) {
+                isPrime = false;
+
+            }
+
+        }
+        if (isPrime == true) {
+            console.log(y + "is  a prime number");
+        } else {
+            console.log(y + "is not a prime number");
+        }
+
+
+        // const fruits = ["apple", "banana", "cherry", "date"];
+        // console.log(fruits);
+        // console.log(fruits.fill("jam", 2, 4));
+        // document.write(fruits.fill("j"));
+        // console.log(fruits.fill("j"));
+
+        // var arr = ["osman", "goni", "ashik", "biswas", "pinaki", "aleale", "rafi", "rasel"];
+        // console.log(arr);
+        // let result = arr.slice(-4, -1);
+        // console.log(result);
+
+        // var y = ['osman', 'goni', 'ashik', 'biswas', 'pinaki', 'elias', 'rafi', 'rasel'];
+        // console.log(y);
+
+        // var newArray = y.splice(5, 0, "bashh");
+        // console.log(y);
+    </script>
+</body>
+
+</html>

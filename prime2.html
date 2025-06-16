@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>prime number</title>
+</head>
+
+<body>
+    <script>
+        let x = prompt("enter number");
+        var isPrime = true;
+        if (x < 2) {
+            isPrime = false;
+        } else {
+            for (let i = 2; i <= Math.sqrt(x); i++) {
+                if (x % i === 0) {
+                    isPrime = false;
+                    break;
+                }
+            }
+        }
+        console.log(isPrime ? `${x} is a prime number` : `${x} is not a prime number`);
+        document.write(isPrime ? `${x} is a prime number` : `${x} is not a prime number`);
+    </script>
+</body>
+
+</html>
